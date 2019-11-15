@@ -48,10 +48,13 @@ def run(songs)
   while reply do 
     if reply == "exit"
       exit_jukebox
+      break
     elsif reply == "help"
       help
     elsif reply == "list"
       list(songs)
+    elsif reply == "play"
+      play(songs)
     end
   end
 end
